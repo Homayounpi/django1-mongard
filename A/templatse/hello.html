@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block conted %}
+
+{% if name == 'admin' %}
+<p>sorry...</p>
+{% else %}<h1>hi</h1>
+  <h3>hello {{name|upper}} ....</h3>
+{% endif %}
+<p>{{ number|add:'2' }}</p>
+{% endblock %}
